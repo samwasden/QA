@@ -1,16 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+
 body {
-    font-family: sans-serif;
+    font-family: 'Long Cang', cursive;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(lightblue, white);
 }
 
 #game-board {
     border: solid 1px black;
     margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+
 #game-board td {
+    font-family: 'Long Cang', cursive;
     border: solid 1px black;
-    height: 80px;
-    width: 80px;
+    height: 10vh;
+    width: 10vh;
     text-align: center;
     font-size: 45px;
+    background-color: white;
+}
+
+#game-board td:hover {
+    margin: 5px;
+    position: absolute;
+    transition-duration: 200ms;
+    background: linear-gradient(salmon, rgb(255, 178, 169));
+    box-shadow: -5px -5px black;
+
+
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+button {
+    font-family: 'Long Cang', cursive;
+    font-size: 20pt;
+    background-color: white;
+    width: 70px;
+    height: 35px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    width: 72px;
+    height: 37px;
+    transition-duration: 200ms;
 }
